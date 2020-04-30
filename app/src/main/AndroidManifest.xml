@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.oa_system">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WorkerIndexActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OwnerIndexActivity"
+            android:label="@string/title_activity_owner_index"></activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_admin_index"></activity>
+        <activity
+            android:name=".AdminIndexActivity"
+            android:label="@string/title_activity_admin_index"></activity>
+        <activity
+            android:name=".AdminPaymentActivity"
+            android:label="@string/title_activity_admin_payment"></activity>
+        <activity
+            android:name=".AdminOwnerModifyActivity"
+            android:label="@string/title_activity_admin_owner_modify"></activity>
+        <activity
+            android:name=".AdminAdvertiseActivity"
+            android:label="@string/title_activity_admin_advertise"></activity>
+        <activity
+            android:name=".AdminGetPayment"
+            android:label="@string/title_activity_admin_get_payment"></activity>
+        <activity
+            android:name=".AdminAddPayment"
+            android:label="@string/title_activity_admin_add_payment"></activity>
+        <activity
+            android:name=".OwnerPaymentActivity"
+            android:label="@string/title_activity_owner_payment"></activity>
+        <activity
+            android:name=".OwnerFixActivity"
+            android:label="@string/title_activity_owner_fix"></activity>
+        <activity
+            android:name=".OwnerAddFix"
+            android:label="@string/title_activity_owner_add_fix"></activity>
+        <activity
+            android:name=".OwnerComplainActivity"
+            android:label="@string/title_activity_owner_complain"></activity>
+        <activity
+            android:name=".OwnerAddComplain"
+            android:label="@string/title_activity_owner_add_complain"></activity>
+        <activity
+            android:name=".AdminComplainActivity"
+            android:label="@string/title_activity_admin_complain"></activity>
+        <activity
+            android:name=".AdminAddFeedback"
+            android:label="@string/title_activity_admin_add_feedback"></activity>
+        <activity
+            android:name=".AdminFixActivity"
+            android:label="@string/title_activity_admin_fix"></activity>
+        <activity
+            android:name=".AdminGetFix"
+            android:label="@string/title_activity_admin_get_fix"></activity>
+        <activity
+            android:name=".AdminAddOwnerActivity"
+            android:label="@string/title_activity_admin_add_owner"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_navigation"
+            android:background="#ff002a58"
+            android:textSize="@dimen/title_size"
+            android:layout_weight="1"
+            android:text="主页"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:id="@+id/owner_index" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_navigation"
+            android:background="#ff002a58"
+            android:textSize="@dimen/title_size"
+            android:text="物业"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:id="@+id/owner_payment" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_navigation"
+            android:background="#ff002a58"
+            android:textSize="@dimen/title_size"
+            android:text="报修"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:id="@+id/owner_fix" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/title_size"
+            android:layout_height="@dimen/bottom_navigation"
+            android:background="#ff002a58"
+            android:text="投诉"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:id="@+id/owner_complain" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/title_size"
+            android:layout_height="@dimen/bottom_navigation"
+            android:background="#ff002a58"
+            android:text="退出"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:id="@+id/owner_logout" />
+    </LinearLayout>
+</RelativeLayout>

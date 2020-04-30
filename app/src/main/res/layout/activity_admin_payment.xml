@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.oa_system.AdminPaymentActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/payment_title">
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="@dimen/item_owner"
+        android:layout_weight="4"
+        android:background="#ee090018"
+        android:textColor="#FFF"
+        android:textSize="@dimen/title_size"
+        android:text="业主姓名"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="@dimen/item_owner"
+        android:layout_weight="4"
+        android:background="#ee090018"
+        android:textSize="@dimen/title_size"
+        android:textColor="#FFF"
+        android:text="业主手机"/>
+</LinearLayout>
+<ListView
+    android:layout_width="match_parent"
+    android:layout_below="@+id/payment_title"
+    android:layout_height="wrap_content"
+    android:id="@+id/owner_onpayment_listView">
+</ListView>
+<fragment
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_fragment"
+    android:name="com.example.oa_system.BottomFragment"
+    android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

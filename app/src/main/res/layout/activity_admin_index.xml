@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oa_system.AdminIndexActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加业主"
+        android:textSize="@dimen/item_text_size"
+        android:id="@+id/admin_add_owner"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_add_owner"
+        android:orientation="horizontal"
+        android:id="@+id/show">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="@dimen/item_owner"
+            android:layout_weight="4"
+            android:background="#ee090018"
+            android:textColor="#FFF"
+            android:textSize="@dimen/title_size"
+            android:text="姓名"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="@dimen/item_owner"
+            android:layout_weight="4"
+            android:background="#ee090018"
+            android:textSize="@dimen/title_size"
+            android:textColor="#FFF"
+            android:text="密码"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="#ee090018"
+            android:layout_height="@dimen/item_owner"
+            android:layout_weight="3"
+            android:textColor="#FFF"
+            android:text="手机"
+            android:textSize="@dimen/title_size"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/show"
+        android:layout_height="wrap_content"
+        android:id="@+id/owner_listView">
+    </ListView>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_fragment"
+        android:name="com.example.oa_system.BottomFragment"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

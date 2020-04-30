@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oa_system.OwnerIndexActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="公告"
+        android:textColor="#F00"
+        android:id="@+id/advertise_title"
+        android:textSize="@dimen/title_size"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/advertise_title"
+        android:layout_height="wrap_content"
+        android:id="@+id/advertise_listView">
+    </ListView>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/owner_bottom_fragment"
+        android:name="com.example.oa_system.OwnerBottomFragment"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

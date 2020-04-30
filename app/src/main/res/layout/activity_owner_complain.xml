@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oa_system.OwnerComplainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进行投诉"
+        android:id="@+id/btn_to_complain" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/complain_title"
+        android:layout_below="@+id/btn_to_complain">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="@dimen/item_owner"
+            android:layout_weight="5"
+            android:background="#ee090018"
+            android:textColor="#FFF"
+            android:textSize="@dimen/title_size"
+            android:text="业主"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="@dimen/item_owner"
+            android:layout_weight="4"
+            android:background="#ee090018"
+            android:textSize="@dimen/title_size"
+            android:textColor="#FFF"
+            android:text="内容"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="@dimen/item_owner"
+            android:layout_weight="4"
+            android:background="#ee090018"
+            android:textSize="@dimen/title_size"
+            android:textColor="#FFF"
+            android:text="反馈"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/complain_title"
+        android:layout_height="wrap_content"
+        android:id="@+id/complain_listView">
+    </ListView>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/owner_bottom_fragment"
+        android:name="com.example.oa_system.OwnerBottomFragment"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
